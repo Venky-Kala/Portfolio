@@ -1,5 +1,5 @@
 
-# Sai Kumar Bella's Portfolio
+# Venkatesh Kala Portfolio
 
 Welcome to the repository for my personal portfolio website! This site showcases my professional work, educational background, projects, and experience.
 
@@ -27,13 +27,13 @@ The site is designed to be responsive, ensuring that it looks great on all devic
 
 To view my portfolio website, simply visit the following link:
 
-[https://sai2729.github.io/My-PortFolio-Website/](https://sai2729.github.io/My-PortFolio-Website/)
+[https://venky-kala.github.io/Portfolio/](https://venky-kala.github.io/Portfolio/)
 
 ## How to Use
 
 1. **Clone the repository**:
    ```bash
-   git clone https://sai2729.github.io/My-PortFolio-Website.git
+   git clone https://github.com/Venky-Kala/Portfolio.git
    ```
 2. Navigate into the project directory:
    cd portfolio
@@ -44,4 +44,4 @@ To view my portfolio website, simply visit the following link:
 This project is open-source and available under the MIT License. Feel free to use and modify it to suit your needs!
 
 ## Contact
-For any inquiries or feedback, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/sai2729/)
+For any inquiries or feedback, feel free to reach out via [LinkedIn](https://www.linkedin.com/in/venkatesh-kala/)
