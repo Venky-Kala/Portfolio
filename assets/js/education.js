@@ -1,70 +1,68 @@
 AOS.init();
 
-// MOOCs Cards
+// MOOCs Cards - Updated with relevant Frontend/Angular courses
 
 const moocs = document.querySelector(".moocs");
 const moocscards = [
   {
-    title: "Data Science",
-    cardImage: "assets/images/education-page/coursera2.svg",
-    moocLink: "https://www.coursera.org/browse/data-science",
-  },
-  {
-    title: "Cryptography",
+    title: "Angular - Complete Guide",
     cardImage: "assets/images/education-page/udemy.svg",
-    moocLink: "https://www.udemy.com/course/cryptography-for-beginners/",
+    moocLink: "https://www.udemy.com/course/the-complete-guide-to-angular-2/",
   },
   {
-    title: "Machine Learning",
-    cardImage: "assets/images/education-page/coursera2.svg",
-    moocLink: "https://www.coursera.org/learn/machine-learning",
-  },
-  {
-    title: "Introduction to HTML 5",
-    cardImage: "assets/images/education-page/udacity.svg",
-    moocLink: "https://www.udacity.com/course/intro-to-html-and-css--ud001",
-  },
-  {
-    title: "Introduction to CSS 3",
-    cardImage: "assets/images/education-page/udacity.svg",
-    moocLink: "https://www.udacity.com/course/intro-to-html-and-css--ud001",
-  },
-  {
-    title: "Javascript",
-    cardImage: "assets/images/education-page/udacity.svg",
-    moocLink: "https://www.udacity.com/course/intro-to-javascript--ud803",
-  },
-  {
-    title: "Bootstrap 4",
+    title: "TypeScript Fundamentals",
     cardImage: "assets/images/education-page/udemy.svg",
-    moocLink: "https://www.udemy.com/course/bootstrap-4-tutorials/",
+    moocLink: "https://www.udemy.com/course/understanding-typescript/",
   },
   {
-    title: "Intro to React",
-    cardImage: "assets/images/education-page/edx.svg",
-    moocLink: "https://www.edx.org/learn/reactjs",
+    title: "RxJS & Reactive Programming",
+    cardImage: "assets/images/education-page/udemy.svg",
+    moocLink: "https://www.udemy.com/course/rxjs-course/",
   },
   {
-    title: "Intro to React Native",
+    title: "NgRx State Management",
+    cardImage: "assets/images/education-page/udemy.svg",
+    moocLink: "https://www.udemy.com/course/ngrx-course/",
+  },
+  {
+    title: "Firebase & Firestore",
     cardImage: "assets/images/education-page/coursera2.svg",
-    moocLink:
-      "https://www.coursera.org/lecture/react-native/introduction-to-react-native-Eax0D",
+    moocLink: "https://www.coursera.org/learn/firebase-basics",
   },
   {
-    title: "NodeJS, Express and MongoDB",
+    title: "React.js Essential Training",
+    cardImage: "assets/images/education-page/coursera2.svg",
+    moocLink: "https://www.coursera.org/learn/react-basics",
+  },
+  {
+    title: "Node.js & Express",
     cardImage: "assets/images/education-page/coursera2.svg",
     moocLink: "https://www.coursera.org/learn/server-side-nodejs",
   },
   {
-    title: "XML-AJAX",
-    cardImage: "assets/images/education-page/udemy.svg",
-    moocLink: "https://www.udemy.com/course/xml-from-beginner-to-expert/",
+    title: "AWS Cloud Practitioner",
+    cardImage: "assets/images/education-page/udacity.svg",
+    moocLink: "https://www.udacity.com/course/aws-cloud-practitioner--cd0362",
   },
   {
-    title: "Data Structures & Algorithms",
+    title: "JavaScript ES6+",
     cardImage: "assets/images/education-page/udacity.svg",
-    moocLink:
-      "https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256",
+    moocLink: "https://www.udacity.com/course/es6-javascript-improved--ud356",
+  },
+  {
+    title: "Testing with Jasmine & Cypress",
+    cardImage: "assets/images/education-page/udemy.svg",
+    moocLink: "https://www.udemy.com/course/cypress-io-master-class/",
+  },
+  {
+    title: "Git & GitHub Actions",
+    cardImage: "assets/images/education-page/udemy.svg",
+    moocLink: "https://www.udemy.com/course/github-actions/",
+  },
+  {
+    title: "Agile & Scrum Mastery",
+    cardImage: "assets/images/education-page/coursera2.svg",
+    moocLink: "https://www.coursera.org/professional-certificates/google-project-management",
   },
 ];
 
@@ -133,24 +131,24 @@ const showCards = () => {
 };
 document.addEventListener("DOMContentLoaded", showCards);
 
-/* Badges*/
+/* Badges - Google Agile Certifications */
 
 const bagdes = document.querySelector(".badges");
 const badgesection = [
   {
-    title: "Google Developer Essentials",
-    image: "assets/images/education-page/badge1.png",
-    description: "Earned May 20, 2020",
+    title: "Google Agile Project Management",
+    image: "assets/images/education-page/google-cert.png",
+    description: "Professional Certificate - Foundations of Agile Project Management",
   },
   {
-    title: "VM Migration",
-    image: "assets/images/education-page/badge2.png",
-    description: "Earned June 20, 2020",
+    title: "Google Agile Essentials",
+    image: "assets/images/education-page/google-cert.png",
+    description: "Implement the Scrum Framework & Agile Methodologies",
   },
   {
-    title: "G Suite Essentials",
-    image: "assets/images/education-page/badge3.png",
-    description: "Earned July 20, 2020",
+    title: "Scrum Productivity",
+    image: "assets/images/education-page/google-cert.png",
+    description: "Organize Projects & Measure Productivity with Scrum",
   },
 ];
 

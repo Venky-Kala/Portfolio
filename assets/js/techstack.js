@@ -1,58 +1,68 @@
 AOS.init();
 
-//  Tech Stacks cards
+//  Tech Stacks cards - Updated to match resume
 
 const techStackCards = document.querySelector(".techstack-box");
 const techStack = [
   {
-    langImage: "assets/images/techstack-page/html.png",
-    langName: "HyperText Markup Language",
-    langDesc: "<li>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser</li>",
+    langImage: "assets/images/techstack-page/angular.png",
+    langName: "Angular (2-19)",
+    langDesc: "<li>5+ years building enterprise-grade SPAs with scalable, component-based architecture, Angular CLI, modules, services, and dependency injection.</li>",
   },
   {
-    langImage: "assets/images/techstack-page/css.png",
-    langName: "Cascading Style Sheets",
-    langDesc: "<li>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/javascript.png",
-    langName: "JavaScript",
-    langDesc: "<li>JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/node.png",
-    langName: "Node",
-    langDesc: "<li>Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/python.png",
-    langName: "Python",
-    langDesc: "<li>Python is an interpreted high-level general-purpose programming language</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/cpp.png",
-    langName: "C++",
-    langDesc: "<li>C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or C with Classes</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/git.png",
-    langName: "Git",
-    langDesc: "<li>Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development.</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/bootstrap.png",
-    langName: "Bootstrap",
-    langDesc: "<li>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development</li>",
+    langImage: "assets/images/techstack-page/typescript.png",
+    langName: "TypeScript & ES6+",
+    langDesc: "<li>Strong expertise in TypeScript and modern JavaScript (ES6+) for type-safe, maintainable, and scalable frontend applications.</li>",
   },
   {
     langImage: "assets/images/techstack-page/react.png",
-    langName: "React",
-    langDesc: "<li>React is a free and open-source front-end JavaScript library for building user interfaces based on UI components</li>",
+    langName: "React.js",
+    langDesc: "<li>Building data-intensive financial dashboards and UI components with React, Redux, Hooks, and modern functional patterns.</li>",
   },
   {
-    langImage:"assets/images/techstack-page/c.png",
-    langName:"C",
-    langDesc:"<li>C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system</li>"
+    langImage: "assets/images/techstack-page/rxjs.png",
+    langName: "RxJS & NgRx",
+    langDesc: "<li>Reactive programming with RxJS Observables, Subjects, Streams, and NgRx (Store, Effects, Selectors) for complex state management.</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/node.png",
+    langName: "Node.js & Express",
+    langDesc: "<li>Full-stack proficiency building REST APIs with clean routing, middleware validation, logging, and structured response patterns.</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/firebase.png",
+    langName: "Firebase & Firestore",
+    langDesc: "<li>Real-time data sync, authentication, Cloud Functions, FCM notifications, scalable data modeling, and query/index optimization.</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/aws.png",
+    langName: "AWS Cloud",
+    langDesc: "<li>Deploying and managing SPAs on Amazon S3, CloudFront CDN, Lambda functions, API Gateway, and CI/CD with CodePipeline.</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/html.png",
+    langName: "HTML5 & CSS3/SCSS",
+    langDesc: "<li>Proficient in modern UI/UX practices including mobile-first design, accessibility (WCAG), cross-browser compatibility, and responsive layouts.</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/primeng.png",
+    langName: "PrimeNG & Angular Material",
+    langDesc: "<li>Creating reusable components and consistent enterprise design systems with PrimeNG, Angular Material, and Tailwind CSS.</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/git.png",
+    langName: "Git & GitHub Actions",
+    langDesc: "<li>Version control workflows, pull requests, CI/CD pipelines with GitHub Actions, Jenkins, and automated deployments.</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/testing.png",
+    langName: "Testing (Jasmine/Karma/Cypress)",
+    langDesc: "<li>Unit testing with Jasmine/Karma and Jest, E2E testing with Cypress and Playwright, ensuring stable releases with automated coverage.</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/charts.png",
+    langName: "Data Visualization",
+    langDesc: "<li>Interactive charting with Chart.js, Highcharts, Recharts, and D3.js for analytics dashboards, time-series, and performance metrics.</li>",
   },
 ];
 

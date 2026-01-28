@@ -186,13 +186,83 @@ a:hover {
 }
 
 .card .wrapper {
-  background-color: #fff;
+  background-color: #1a1a2e;
   border: 0;
-  border-radius: 10px;
-  min-height: 21.5rem;
+  border-radius: 16px;
+  min-height: 22rem;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 19px 38px var(--shadow1), 0 15px 12px var(--shadow2);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+}
+
+.card .wrapper:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* Project Card Image Styling */
+.card-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+.card .wrapper:hover .card-thumbnail {
+  transform: scale(1.08);
+  filter: brightness(0.7);
+}
+
+.card-image-container.fallback-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Tech Stack Tags */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.tech-tag {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Project Description */
+.project-description {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 8px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .card .wrapper:hover .data {
@@ -203,8 +273,9 @@ a:hover {
   position: absolute;
   bottom: 0;
   width: 100%;
-  transition: transform 0.3s;
-  background: rgba(0, 0, 0, 0.55);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.7) 50%, transparent 100%);
+  z-index: 2;
 }
 
 @media (min-width: 60rem) {
@@ -357,9 +428,9 @@ input[type="text"] {
 
 .skill-card .data {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.55);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.7) 50%, transparent 100%);
   transform: translateY(calc(60px + 4em));
-  padding: 5px;
+  padding: 15px;
 }
 
 .skill-card .title a {
@@ -855,4 +926,114 @@ SVG ANIMATIONS PROJECT PAGE
   animation-iteration-count: infinite;
   animation-duration: 3.3s;
   transform-origin: 785.132px 295.833px;
+}
+
+/* =============================================
+   ENHANCED PROJECT CARD RESPONSIVE STYLES
+   ============================================= */
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .card .wrapper {
+    min-height: 18rem;
+  }
+  
+  .card-thumbnail {
+    object-position: top center;
+  }
+  
+  .tech-tags {
+    gap: 6px;
+  }
+  
+  .tech-tag {
+    padding: 3px 8px;
+    font-size: 0.7rem;
+  }
+  
+  .project-description {
+    font-size: 0.85rem;
+    -webkit-line-clamp: 2;
+  }
+  
+  .card .title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card .wrapper {
+    min-height: 16rem;
+    border-radius: 12px;
+  }
+  
+  .card .data {
+    padding: 10px;
+  }
+  
+  .tech-tag {
+    padding: 2px 6px;
+    font-size: 0.65rem;
+  }
+  
+  .project-description {
+    font-size: 0.8rem;
+    margin: 4px 0;
+  }
+}
+
+/* Large Screen Enhancements */
+@media (min-width: 1200px) {
+  .card .wrapper {
+    min-height: 24rem;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    -webkit-line-clamp: 4;
+  }
+  
+  .tech-tag {
+    padding: 5px 14px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Image Loading States */
+.card-thumbnail[src=""],
+.card-thumbnail:not([src]) {
+  visibility: hidden;
+}
+
+.card-image-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  z-index: -1;
+}
+
+/* Shimmer loading effect */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.card-image-container.loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
 }

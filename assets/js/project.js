@@ -1,81 +1,77 @@
 AOS.init();
-/* Project Cards */
+/* Project Cards - Updated to showcase key professional projects */
 
 const projectcards = document.querySelector(".projectcards");
 
 // Array of object for projects
 const projects = [
   {
-    title: "Android Application for College",
-    cardImage: "assets/images/project-page/college_app.jpg",
-    description: "A chess engine for a popular game dev engine.",
-    tagimg: "https://image.flaticon.com/icons/png/512/643/643350.png",
-    Previewlink: "https://github.com/sai2729/Android-App-for-College",
-    Githublink: "https://github.com/sai2729/Android-App-for-College",
-  },
-  {
-    title: "Results Automation using Selenium",
-    cardImage: "assets/images/project-page/selenium.png",
-    description: "A quiz app built using basic react.",
-    tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: "",
-    Githublink: "https://github.com/sai2729/ResultAutomation-using-Selenium",
-  },
-  {
-    title: "Gesture Controlled Gaming using OpenCV",
-    cardImage: "assets/images/project-page/gesture_gaming.png",
-    description: "Flappy bird game built using React.js",
-    tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: "https://github.com/sai2729/Gesture-Controlled-Gaming-Using-OpenCV",
-    Githublink: "https://github.com/sai2729/Gesture-Controlled-Gaming-Using-OpenCV",
-  },
-  {
-    title: "Infant Danger Detection using OpenCV",
-    cardImage: "assets/images/project-page/infant_danger_detection.jpg",
-    description: "Flappy bird game built using React.js",
-    tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: "https://github.com/sai2729/Infant-Danger-Detection-using-OpenCV",
-    Githublink: "https://github.com/sai2729/Infant-Danger-Detection-using-OpenCV",
-  },
-  {
-    title: "Weekly Schedule Manager using Java",
-    cardImage: "assets/images/project-page/weeklymanager.png",
-    description: "Flappy bird game built using React.js",
-    tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-    Previewlink: "https://github.com/sai2729/weekly-management-system",
-    Githublink: "https://github.com/sai2729/weekly-management-system",
-  },
-  {
-    title: "Priest Booking - Android Application",
+    title: "Hotel Management System",
     cardImage: "assets/images/project-page/priestapp.jpeg",
-    description: "",
-    tagimg: "https://cdn.iconscout.com/icon/free/png-512/priestpp.jpeg",
-    Previewlink: "https://github.com/sai2729/Priest-booking-Android-App",
-    Githublink: "https://github.com/sai2729/Priest-booking-Android-App",
+    description: "Multi-tenant hotel management platform with real-time room status, shift management, and guest self-service features.",
+    tags: ["Angular 17", "Firebase", "PrimeNG", "NgRx"],
+    Previewlink: "#",
+    Githublink: "#",
   },
   {
-    title: "Animal Intrusion Detection In Farms using OpenCV",
-    cardImage: "assets/images/project-page/animalIntrusion.jpg",
-    description: "",
-    tagimg: "https://cdn.iconscout.com/icon/free/png-512/animalIntrusion.jpeg.jpeg",
-    Previewlink: "https://github.com/sai2729/Animal-Intrusion-Detection-in-Farms-using-OpenCV",
-    Githublink: "https://github.com/sai2729/Animal-Intrusion-Detection-in-Farms-using-OpenCV",
+    title: "Financial Analytics Dashboard",
+    cardImage: "assets/images/project-page/financial-dashboard.png",
+    description: "Enterprise financial platform with real-time market data, portfolio management, and interactive charting.",
+    tags: ["React.js", "Redux", "D3.js", "AG-Grid"],
+    Previewlink: "#",
+    Githublink: "#",
+  },
+  {
+    title: "Front Desk Operations Hub",
+    cardImage: "assets/images/project-page/front-desk-dashboard.png",
+    description: "Centralized front desk dashboard for hotel operations with real-time cleaning status tracking, departure management, housekeeping requests, and maintenance ticket overview.",
+    tags: ["Angular 17", "TypeScript", "Firestore", "PrimeNG"],
+    Previewlink: "#",
+    Githublink: "#",
+  },
+  {
+    title: "Shift Management & Scheduling",
+    cardImage: "assets/images/project-page/shift-scheduling.png?v=2",
+    description: "Real-time shift tracking system with timer functionality, break management, calendar views, and automated schedule generation for hotel staff.",
+    tags: ["Angular 17", "RxJS", "Firestore", "PrimeNG"],
+    Previewlink: "#",
+    Githublink: "#",
+  },
+  {
+    title: "Housekeeping Management Module",
+    cardImage: "assets/images/project-page/HousekeepingManagement.png",
+    description: "Room cleaning status tracking, task assignment, and inventory management for hotel housekeeping operations with real-time updates.",
+    tags: ["Angular", "Firebase", "PrimeNG", "RxJS"],
+    Previewlink: "#",
+    Githublink: "#",
+  },
+  {
+    title: "Maintenance Request System",
+    cardImage: "assets/images/project-page/MaintenanceRequest.png",
+    description: "Work order management with priority-based ticket routing, photo attachments, progress tracking, and maintenance team coordination.",
+    tags: ["Angular", "Firestore", "Cloud Functions", "FCM"],
+    Previewlink: "#",
+    Githublink: "#",
   },
 ];
 
 // function for rendering project cards data
 const showProjectCards = () => {
   let output = "";
-  projects.forEach(({ title, cardImage, Previewlink, Githublink }) => {
+  projects.forEach(({ title, cardImage, description, tags, Previewlink, Githublink }) => {
+    const tagsHTML = tags ? tags.map(tag => `<span class="tech-tag">${tag}</span>`).join('') : '';
+    
     output += `       
-        <div class="column skill-card card" style="margin: 15px"data-aos="zoom-in-up" data-aos-easing="linear" data-aos-delay="300" data-aos-duration="600" >
+        <div class="column skill-card card" style="margin: 15px" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-delay="300" data-aos-duration="600">
           <div class="wrapper" style="background: url(${cardImage}) center / cover no-repeat;">
             <div class="header">
             </div>
             <div class="data">
               <div class="content">
-              <div class="title-div">
-                <h4 class="title"><a target="_blank" href="${Githublink}">${title}</a></h4>
+                <div class="title-div">
+                  <h4 class="title"><a target="_blank" href="${Githublink}">${title}</a></h4>
+                  <p class="project-description">${description}</p>
+                  <div class="tech-tags">${tagsHTML}</div>
                 </div>
               </div>
             </div>
@@ -87,20 +83,15 @@ const showProjectCards = () => {
 document.addEventListener("DOMContentLoaded", showProjectCards);
 
 function myFunction() {
-  // Declare variables
-  var input, button, i, skillcard, card, title;
+  var input, i, skillcard, card, title;
   input = document.getElementById("myInput").value;
   input = input.toUpperCase();
   skillcard = document.getElementsByClassName("skill-card");
   card = document.getElementsByClassName("card");
   title = document.getElementsByClassName("title");
 
-  // Loop through all list items, and hide those who don't match the search query
-  for (i = 0; i < button.length; i++) {
-    if (
-      button[i].innerHTML.toUpperCase().includes(input) ||
-      title[i].innerHTML.toUpperCase().includes(input)
-    ) {
+  for (i = 0; i < card.length; i++) {
+    if (title[i].innerHTML.toUpperCase().includes(input)) {
       skillcard[i].style.display = "";
       card[i].style.display = "";
     } else {

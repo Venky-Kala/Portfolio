@@ -5,18 +5,18 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Data Engineer",
-    cardImage: "assets/images/experience-page/Doublene-logo.png",
-    place: "Doublene",
-    time: "(February, 2024 - Present)",
-    desp: "<li>Created data processing scripts using Python, SQL, and PySpark, reducing data transformation time by 25% across multiple data sources.</li> <li>Designed and implemented end-to-end ETL pipelines, increasing data processing efficiency by 35%, improving data accessibility for business intelligence and analytics.</li> <li>Implemented Kafka for real-time data streaming, enabling a 15% reduction in latency and improving business responsiveness to real-time data insights.</li> <li> Managed AWS infrastructure (EC2, Lambda, Redshift) for scalable data pipelines, reducing operational costs by 20% through resource optimization.</li> <li>Developed and maintained data warehousing solutions in Hive and Redshift, improving query performance by 40% and supporting faster business reporting.</li> <li>Collaborated with data scientists to clean and prepare datasets, reducing data processing time by 20% for machine learning models and analytics.</li> <li>Ensured 99% data accuracy through automated validation, monitoring, and cleansing, enhancing trust in data-driven decision-making processes.</li> <li>Partnered with cross-functional teams to define and deliver scalable data solutions, contributing to a 25% increase in project efficiency.</li> <li> Managed Git and GitHub for version control of data pipelines, ensuring seamless collaboration and reducing code errors by 15%.</li>",
+    title: "Frontend / Angular Developer",
+    cardImage: "assets/images/experience-page/workcuit-logo.png",
+    place: "Workcuit AI · Orland Park, IL",
+    time: "(Jan 2024 - Present)",
+    desp: "<li>🏗️ <strong>Architected multi-role dashboards</strong> for Admin, Front Desk, Housekeeping, Maintenance & Manager using <strong>Angular 17</strong>, <strong>PrimeNG</strong>, and <strong>TypeScript</strong> with role-based UI rendering and dynamic routing.</li> <li>⏱️ <strong>Built real-time shift management</strong> module with timer tracking, break handling, calendar views, shift templates, and swap request workflows using <strong>RxJS Observables</strong> and <strong>Firestore listeners</strong>.</li> <li>☁️ <strong>Deployed Angular SPAs on AWS</strong> using <strong>S3</strong>, <strong>CloudFront CDN</strong>, <strong>Lambda</strong>, and <strong>API Gateway</strong> for secure, highly available, low-latency delivery.</li> <li>🔄 <strong>Implemented NgRx state management</strong> with Store/Effects/Selectors and RxJS streams for room status updates, task assignments, and inter-department communication.</li> <li>🔐 <strong>Designed secure multi-tenant architecture</strong> with property-based data isolation, <strong>JWT authentication</strong>, <strong>RBAC</strong>, route guards, and <strong>Firebase Security Rules</strong>.</li> <li>📱 <strong>Developed Digital Guest Pad (iPad)</strong> for self-service check-in/check-out with touch-optimized UI, responsive layouts, and PrimeNG mobile components.</li> <li>🤖 <strong>Leveraged AI-powered tools</strong> including <strong>ChatGPT</strong>, <strong>GitHub Copilot</strong>, <strong>Figma AI</strong>, and <strong>Adobe Firefly</strong> for accelerated development and design-to-code workflows.</li> <li>⚡ <strong>Optimized performance</strong> with <strong>OnPush change detection</strong>, lazy loading, code splitting, virtual scrolling, and Core Web Vitals improvements.</li> <li>🔧 <strong>Built Node.js/Express APIs</strong> for shift operations, authentication, and property configuration with middleware validation, logging, and error handling.</li> <li>📊 <strong>Designed Firestore data models</strong> for properties, rooms, tasks, shifts, and reservations with optimized indexes and scalable query patterns.</li> <li>📈 <strong>Integrated analytics dashboards</strong> using <strong>Chart.js</strong> for occupancy, revenue trends, and staff productivity with drill-down filters.</li> <li>🔔 <strong>Implemented real-time notifications</strong> using <strong>Firebase Cloud Messaging (FCM)</strong> for task assignments, shift reminders, and operational alerts.</li> <li>✅ <strong>Built comprehensive testing</strong> with <strong>Jasmine/Karma</strong> for unit tests and <strong>Cypress</strong> for E2E testing across authentication and room/task modules.</li> <li>🚀 <strong>Automated CI/CD pipelines</strong> using <strong>GitHub Actions</strong> for linting, testing, and deployment to <strong>Firebase Hosting</strong>.</li>",
   },
   {
-    title: "Data Engineer",
-    cardImage: "assets/images/experience-page/techecy.jpeg",
-    place: "Techey",
-    time: "(January, 2019 - July, 2022)",
-    desp: "<li>Built Tableau and Power BI dashboards for executive leadership, cutting report generation time by 50% and enhancing decision-making.</li> <li>Optimized large-scale data systems using Apache Spark and Hadoop, cutting data processing times by 30% and improving overall system performance.</li> <li>Developed robust data pipelines using Azure Data Factory and Databricks, increasing data processing speed by 30% and streamlining cross-cloud data operations.</li> <li> Optimized SQL queries and database schemas in MySQL and PostgreSQL, improving performance of analytical queries by 40%.</li> <li>Migrated data from legacy systems to Azure Synapse and Delta Lake, enhancing data access speed by 30% and improving analytics capabilities.</li> <li>Established data governance standards and security protocols, ensuring compliance with industry best practices for data privacy and security.</li> <li>Presented data insights and recommendations to senior management using Excel for analysis, PowerPoint for presentations, and SharePoint for collaboration, improving decision-making speed by 15%.</li> <li>Coordinated with stakeholders to understand business needs and develop customized data solutions, reducing reporting turnaround time by 20%.</li> <li>Deployed Azure Event Hub for real-time data ingestion, enabling the processing of millions of events per day with 99.9% accuracy.</li> <li>Built and analyzed data models using Jupyter Notebooks, enhancing data exploration and visualization, and managed project tasks and team workflows with Jira, increasing project efficiency by 20%.</li>",
+    title: "Frontend / UI Developer",
+    cardImage: "assets/images/experience-page/factset-logo.png",
+    place: "FactSet · India",
+    time: "(Jul 2019 - Jun 2022)",
+    desp: "<li>💹 <strong>Developed enterprise financial platforms</strong> using <strong>React.js</strong> and <strong>Material-UI</strong> for investment analytics, portfolio management, and market data visualization serving hedge funds, asset managers, and banks.</li> <li>📊 <strong>Built data-intensive dashboards</strong> for equity research, fixed income analytics, risk management, and financial data analysis tools used by institutional clients.</li> <li>📋 <strong>Implemented complex data grids</strong> using <strong>React Table</strong> and <strong>AG-Grid</strong> for real-time market data, portfolio holdings, and multi-dimensional analytics with sorting, filtering, and export capabilities.</li> <li>🔌 <strong>Integrated RESTful APIs & WebSocket</strong> connections for real-time financial data feeds, market updates, and pricing with efficient caching strategies.</li> <li>📈 <strong>Developed interactive charting</strong> using <strong>Highcharts</strong>, <strong>Recharts</strong>, and <strong>D3.js</strong> for time-series analysis, portfolio performance, and risk metrics dashboards.</li> <li>🧩 <strong>Created reusable component library</strong> following FactSet design system with <strong>styled-components</strong> for forms, tables, modals, and data visualization.</li> <li>🔄 <strong>Implemented Redux state management</strong> with middleware patterns, normalized data structures for financial entities, and selector patterns for derived calculations.</li> <li>🔍 <strong>Built advanced search interfaces</strong> for screening securities, analyzing financial statements, and querying market data with autocomplete and multi-select filters.</li> <li>⚡ <strong>Optimized large dataset handling</strong> using <strong>virtualization</strong>, memoization, code splitting, and <strong>Webpack</strong> optimization strategies.</li> <li>🧪 <strong>Developed form workflows</strong> using <strong>Formik</strong> with custom validation for portfolio construction, trade order entry, and client preference management.</li> <li>✅ <strong>Achieved 70%+ code coverage</strong> with <strong>Jest</strong> unit tests for financial calculations, data transformations, and component interactions.</li> <li>🤝 <strong>Collaborated in Agile/Scrum</strong> with product managers and global teams across time zones, participating in sprint planning, code reviews, and delivery tracked in <strong>JIRA</strong>.</li>",
   },
 ];
 
@@ -50,33 +50,45 @@ const showCards2 = () => {
 };
 document.addEventListener("DOMContentLoaded", showCards2);
 
-// Volunteership Cards
+// Technical Skills Cards
 
 const volunteership = document.querySelector(".volunteership");
 const volunteershipcards = [
   {
-    title: "GirlScript Summer Of Code 2020",
-    cardImage: "assets/images/experience-page/1.jpg",
+    title: "Angular 2-19 & TypeScript",
+    cardImage: "assets/images/experience-page/angular-logo.png",
     description:
-      "Responsible for handling the projects GirlScript App and GirlScript Website Boilerplate.",
+      "5+ years building enterprise SPAs with Angular, TypeScript, RxJS, NgRx (Store/Effects/Selectors), and scalable component-based architecture.",
   },
   {
-    title: "StudentCode-in 2020",
-    cardImage: "assets/images/experience-page/2.jpg",
+    title: "React.js & Redux",
+    cardImage: "assets/images/experience-page/react-logo.png",
     description:
-      "Responsible for handling open source contributions for the project Awesome Developer Portfolio.",
+      "Building data-intensive financial dashboards with React.js, Redux, Material-UI, AG-Grid, styled-components, and real-time WebSocket integrations.",
   },
   {
-    title: "PClub Summer Of Code 2020",
-    cardImage: "assets/images/experience-page/3.jpg",
+    title: "Firebase & Firestore",
+    cardImage: "assets/images/experience-page/firebase-logo.png",
     description:
-      "Mentoring for the projects Deep Pixel, AutoVaidya, Just Resume and Doc2pen.",
+      "Real-time data sync with Firestore, Firebase Auth, Cloud Functions, FCM notifications, Security Rules, and Firebase Hosting.",
   },
   {
-    title: "Hakin-Codes",
-    cardImage: "assets/images/experience-page/4.jpg",
+    title: "AWS Cloud Services",
+    cardImage: "assets/images/experience-page/aws-logo.png",
     description:
-      "Mentoring for the open source projects Deeppixel, Awesome Developer Portfolios and Doc2Pen.",
+      "Deploying Angular SPAs on AWS S3, CloudFront CDN, Lambda functions, API Gateway, and CI/CD pipelines with CodePipeline.",
+  },
+  {
+    title: "Node.js & Express",
+    cardImage: "assets/images/experience-page/node-logo.png",
+    description:
+      "Full-stack development with Node.js/Express REST APIs, middleware validation, authentication workflows, and microservices architecture.",
+  },
+  {
+    title: "UI Libraries & Styling",
+    cardImage: "assets/images/experience-page/css-logo.png",
+    description:
+      "PrimeNG, Angular Material, Material-UI, AG-Grid, Bootstrap, Tailwind CSS, SCSS/SASS, Flexbox/Grid, and responsive mobile-first design.",
   },
 ];
 
@@ -99,114 +111,30 @@ const showCards = () => {
 };
 document.addEventListener("DOMContentLoaded", showCards);
 
-// Hackathon Section
+// Certifications Section
 
 const hackathonsection = document.querySelector(".hackathon-section");
 const mentor = [
   {
-    title: "The Uplift Project",
-    subtitle: "Mentor",
-    image: "assets/images/experience-page/uplift.png",
-    desp: "I would be responsible for guiding 100s of participants across the globe in their first steps towards Applied Data Science and building end-to-end machine learning projects.",
-    href: "https://uplift.girlscript.tech/",
+    title: "Google Agile Project Management",
+    subtitle: "Professional Certificate",
+    image: "assets/images/experience-page/google-cert.png",
+    desp: "Comprehensive certification covering Foundations of Agile Project Management, Google Agile Essentials, Implement the Scrum Framework, and Organize Projects & Measure Productivity with Scrum.",
+    href: "https://www.coursera.org/professional-certificates/google-project-management",
   },
   {
-    title: "ULHacks",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/ulhacks.png",
-    desp: "ULHacks is a 36 hour long hackathon organized with an aim to enable students to create a project which empowers learning.",
-    href: "https://ulhacks.com/",
+    title: "AWS Certified Developer",
+    subtitle: "Associate (In Progress)",
+    image: "assets/images/experience-page/aws-cert.png",
+    desp: "Pursuing AWS Developer Associate certification to validate cloud deployment skills with S3, CloudFront, Lambda, API Gateway, and CI/CD pipelines.",
+    href: "https://aws.amazon.com/certification/certified-developer-associate/",
   },
   {
-    title: "WaffleHacks",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/wafflehacks.png",
-    desp: "WaffleHacks 2021 is an upcoming 48-hour student-organized hackathon with an aim to bring technical solutions to local communities and small businesses.",
-    href: "https://wafflehacks.org/",
-  },
-  {
-    title: "Elevate Tech",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/elevate.png",
-    desp: "Elevate Hacks is an upcoming all-female virtual hackathon coming from AUGUST 14th to 15th.",
-    href: "https://elevatetech.codes/",
-  },
-  {
-    title: "PitchTeen",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/pitchteen.png",
-    desp: "PitchTeen 2.0 was a tech startup competition for female and non-binary communities in high school and college from all over the world with an aim to create a safe and encouraging place for women to help them explore tech and business fields.",
-    href: "https://www.linkedin.com/company/pitchteen/about/",
-  },
-  {
-    title: "Hack-A-Solution",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/hackasolution.png",
-    desp: "Hack-a-Solution 2021 is a 24 hour long hackathon organized by Frisco students to raise awareness of world issues through technology.",
-    href: "https://hackasolution.devpost.com/",
-  },
-  {
-    title: "UniGlobe Hacks",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/uniglobe.png",
-    desp: "UniGlobe Hacks 2.0 is an upcoming 4-day long hackathon run by high school students held during 28-31 July 2021.",
-    href: "https://uniglobe-hacks.devpost.com/",
-  },
-  {
-    title: "AtlasHacks",
-    subtitle: "Mentor",
-    image: "assets/images/experience-page/atlas.png",
-    desp: "AtlasHacks II is a 3-day virtual hackathon that aims to foster creativity within hackers all around the world.",
-    href: "https://atlashacks2.devpost.com/",
-  },
-  {
-    title: "NeoHacks",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/neo.png",
-    desp: "NeoHacks is an upcoming 48-hour hackathon taking place July 23-25, 2021 where hundreds of students from around the world will come together virtually to learn new skills, meet new friends, and build awesome projects. We provide beginner-friendly workshops, mentorship, fun games, and more.",
-    href: "https://neohacks.org/",
-  },
-  {
-    title: "Mission Inspired",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/mission.png",
-    desp: "InspireEd Hacks is a nationwide initiative organized by the student-for-student nonprofit, Mission InspirEd, challenging students ages 10-18 to synthesize their creativity and coding experience into a product beneficial to the educational community.",
-    href: "https://www.missioninspired.org/hackathon",
-  },
-  {
-    title: "Hack3",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/hack3.png",
-    desp: "Hack3 2021 is an upcoming global online hackathon that aims to enable high school students to learn computer science, with a broader message of (everyone can code) targeting underrepresented demographics to improve diversity and inclusion of individuals in the computer technology space.",
-    href: "https://hack3.co/",
-  },
-  {
-    title: "JITHack",
-    subtitle: "Mentor",
-    image: "assets/images/experience-page/jithack.png",
-    desp: "JITHack is an upcoming virtual design and development hackathon organized by the students of Jyothy Institute of Technology, Bengaluru on June 26, 2021, where participants have 24 hours to build something incredible.",
-    href: "https://jithack.netlify.app/",
-  },
-  {
-    title: "Recess Hacks",
-    subtitle: "Mentor",
-    image: "assets/images/experience-page/recess.png",
-    desp: "Recess Hacks is an upcoming hackathon for high school students in the Greater Toronto Area that strives to encourage innovation among high school students and get involved in technology.",
-    href: "https://recesshacks.com/",
-  },
-  {
-    title: "Citro Tech",
-    subtitle: "Mentor",
-    image: "assets/images/experience-page/citro.png",
-    desp: "Citro Hacks 2021 is an upcoming all-inclusive online hackathon organized by Citro Tech, a student led organization dedicated to empowering minorities in the tech field</li>",
-    href: "https://citro.tech/",
-  },
-  {
-    title: "NHacks",
-    subtitle: "Judge",
-    image: "assets/images/experience-page/nhacks.png",
-    desp: "NHacks VI was a hackathon that aimed to encourage students everywhere to develop skills in computer science by creating tangible products that they're proud of. It initially started as Michigan's largest high school hackathon.",
-    href: "https://nhacks-vi.devpost.com/",
+    title: "Azure AI Fundamentals",
+    subtitle: "AI-900 (Planned)",
+    image: "assets/images/experience-page/azure-cert.png",
+    desp: "Planning to pursue Microsoft Azure AI Fundamentals certification to formalize AI tools expertise with ChatGPT, GitHub Copilot, and Azure AI services.",
+    href: "https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/",
   },
 ];
 
@@ -223,7 +151,7 @@ const showCards3 = () => {
           <div class="blog-slider__title">${title}</div>
           <span class="blog-slider__code">${subtitle}</span>
           <div class="blog-slider__text">${desp}</div>
-          <a href="${href}" class="blog-slider__button">Read More</a>   
+          <a href="${href}" class="blog-slider__button">Learn More</a>   
         </div>
       </div>
       `)

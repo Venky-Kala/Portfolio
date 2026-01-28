@@ -25,7 +25,6 @@ html[data-theme="light"] {
   --col-icon-linkedin: #0e76a8;
   --col-icon-kaggle: #41aff3;
   --col-icon-github: #24292e;
-  --col-icon-instagram: rgb(201, 94, 174);
   --col-icon-mail: rgb(209, 82, 82);
   --col-icon-google-scholar: #3cba54;
   --col-icon-codeforces: rgb(19, 145, 184);
@@ -53,7 +52,6 @@ html[data-theme="dark"] {
   --col-icon-linkedin: #0e76a8;
   --col-icon-kaggle: #41aff3;
   --col-icon-github: #24292e;
-  --col-icon-instagram: rgb(201, 94, 174);
   --col-icon-mail: rgb(209, 82, 82);
   --col-icon-google-scholar: #3cba54;
   --col-icon-codeforces: rgb(19, 145, 184);
@@ -628,61 +626,6 @@ Rotate Transition in foote Soical Icon
 
 /*
 -----------------------------
- INSTAGRAM MICROANIMATION
------------------------------
-*/
-
-.st0 {
-  fill: none;
-  stroke: #EF4649;
-  stroke-width: 7;
-  stroke-linecap: round;
-  stroke-miterlimit: 10;
-}
-
-.instagram-icon-footer:hover #littleCircle {
-  stroke-dasharray: 150;
-}
-
-.instagram #shutter {
-  display: none;
-}
-
-.instagram-icon-footer:hover #shutter {
-  display: block;
-  animation: shutter 1s linear infinite;
-}
-
-.instagram-icon-footer:hover #lens {
-  fill: #EF4649;
-  animation: lens 1.5s linear infinite;
-}
-
-@keyframes shutter {
-  0%,
-  50% {
-      stroke-dashoffset: 150;
-  }
-  75% {
-      fill: #EF4649;
-      stroke-dashoffset: 0;
-      stroke-width: 11;
-  }
-}
-
-@keyframes lens {
-  0%,
-  75% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
-}
-
-
-/*
------------------------------
  GITHUB MICROANIMATION
 -----------------------------
 */
@@ -718,15 +661,6 @@ Rotate Transition in foote Soical Icon
 }
 
 
-/* instagram SVG micro animation */
-
-.instagram-icon-footer {
-  width: 70px;
-  padding-right: 24px;
-  padding-bottom: 8px;
-}
-
-
 /* github SVG Micro animation */
 
 .github-icon-footer {
@@ -759,17 +693,6 @@ Rotate Transition in foote Soical Icon
 
 .rounded-social-buttons .social-button.linkedin:hover,
 .rounded-social-buttons .social-button.linkedin:focus {
-  color: #000;
-  background: #2b2a2A;
-}
-
-.rounded-social-buttons .social-button.instagram {
-  background: #2b2a2A;
-  box-shadow: 10px 10px 5px rgb(0 0 0 / 20%);
-}
-
-.rounded-social-buttons .social-button.instagram:hover,
-.rounded-social-buttons .social-button.instagram:focus {
   color: #000;
   background: #2b2a2A;
 }
